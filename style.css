@@ -18,8 +18,11 @@
 }
 
 nav .logo {
-    padding-left: 40px;
-    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    border: 3px solid hsl(195, 53%, 69%);
+    width: 15%;
+    background-color: red;
 }
 
 nav .navbar {
@@ -35,7 +38,7 @@ nav .navbar {
 .navdiv {
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 li {
     list-style: none;
