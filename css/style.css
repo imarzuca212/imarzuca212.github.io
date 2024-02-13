@@ -33,6 +33,10 @@ body {
 }
 
 
+html ::-webkit-scrollbar {  /* Takes away the scrollbar so it cannot be seen (can still scroll on the page) */
+    display:none;
+}
+
 /********* Header **********/
 #header {
     background: linear-gradient(to right, #236f93, #0c3c53);
