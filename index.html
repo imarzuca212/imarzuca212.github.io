@@ -1,46 +1,104 @@
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>UMB Robotics</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-        <!--Navagation bar-->
-		<nav class="navbar">
-			<div class="navdiv">
-				<nav><img alt="logo image" src="images/Umb_rb_logo.jpg" class="logo"></nav>
-				<ul>
-					<button><a href="#">Home</a></li>
-					<button><a href="#">About Us</a></li>
-					<button><a href="#">Projects</a></li>
-					<button><a href="#">Join Now</a></li>
-				</ul>
-			</div>
-		</nav>
-        <hr>
-           <!--Background video (z-index -1)-->
-		<div class="hero"> <!--Solid background color (z-index: -2) -->
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="images/bg-vid.mp4" type="video/mp4">
-            </video>
+<html lang="en">
 
-            <!--Homepage title-->
-			<div class="container">
-				<h1>UMASS Boston <span class="auto-type"></span> Club</h1>
-            </div>
-            
-            <!--typed.js animation-->
-            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            <script>
-                var type = new Typed(".auto-type", {
-                    strings: ["Robotics", "Engineering"],
-                    typeSpeed: 50,
-                    backSpeed: 80,
-                    loop: true
-                })
-            </script>
-		</div>
-	</body>
+<head>
+  <title>UMASS Boston Robotics Club</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--Linking Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!--======= HEADER =======-->
+  <header id="header" class="fixed-top ">
+
+    <!--Static navigation menu container-->
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo me-auto"><img src="images/logo.png" alt="Logo" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul class="hover">
+          <li><a class="nav-link scrollto active hover-underline-animation" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto hover-underline-animation" href="#about-us">About Us</a></li>
+          <li><a class="nav-link scrollto hover-underline-animation" href="#projects">Projects</a></li>
+          <li><a class="nav-link scrollto hover-underline-animation" href="#calendar">Calendar</a></li>
+          <li><a class="nav-link scrollto hover-underline-animation" href="#contact">Contact</a></li>
+          <li><a class="joinclub scrollto" href="#join-club">Join Club</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div> <!--Navigation menu ends-->
+
+
+  </header>
+  </div> <!--Header ends-->
+
+
+  <!--======= HERO =======-->
+  <section id="hero" class="d-flex align-items-center">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="images/bg-video.mp4" type="video/mp4">
+    </video>
+
+    <!--Bootstrap grid system-->
+    <div class="container">
+      <div class="row">
+
+        <!--typed.js animation + Animate On Scroll-->
+        <div class="justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <h1>UMASS Boston <span class="auto-type"></span> Club</h1>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+            var type = new Typed(".auto-type", {
+              strings: ["Robotics", "Engineering"],
+              typeSpeed: 50,
+              backSpeed: 80,
+              loop: true
+            })
+          </script>
+
+        </div>
+
+        <div class="justify-content-center justify-content-lg-start">
+          <a href="#about-us" class="btn-join-club scrollto"> Explore  ></a>
+        </div>
+
+
+  </section> <!--Hero ends-->
+
+
+  <main id="main">
+    <!--UMASS Logo-->
+    <section id="umass" class="umass section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="images/umb-logo.png" class="img-fluid" alt="UMB Logo">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+  </main>
+
+
+
+  <!--Linking Boostrap JS Library-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+
+</body>
+
 </html>
