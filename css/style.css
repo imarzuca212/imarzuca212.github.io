@@ -1,6 +1,42 @@
 /*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #37517e;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #37517e;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 /* CSS Animation */
 .hover-underline-animation {
@@ -24,6 +60,12 @@
 .hover-underline-animation:hover::after {
     width: 80%;
 }
+
+.inner-shadow {
+    width: auto;
+    height: auto;
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 9px -5px; 
+  }
 
 
 
@@ -116,7 +158,7 @@ html ::-webkit-scrollbar {  /* Takes away the scrollbar so it cannot be seen (ca
     color: #ffffff;
     background-color: #c9c9c9;
     font-weight: 550;
-
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 15px -5px; 
 }
 
 
