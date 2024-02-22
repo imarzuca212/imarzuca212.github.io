@@ -358,9 +358,29 @@ section {
 
 
   .test {
-    background: red;
-    margin-top: 5px;
+    /* background: linear-gradient(to right, #236f93, #0c3c53); */
+    background: hsl(0, 0%, 35%);
+    color:white;
     margin-bottom: 20px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
     width: 100vw;
     height: 100vh;
+  }
+
+  .photo {
+    border-radius: 25px;
+    height: 30%;
+    width: 30%;
+    border: 2px solid black;
+  }
+
+  #group-photo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #group-photo:hover{
+    transform:scale(1.1);
   }
