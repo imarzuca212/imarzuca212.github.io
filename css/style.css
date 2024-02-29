@@ -357,10 +357,21 @@ section {
   }
 
 
-  .test {
-    background: red;
+  .info-block {
+    background: black;
     margin-top: 5px;
     margin-bottom: 20px;
     width: 100vw;
     height: 100vh;
+  }
+
+  .info-block img {
+    width: 35%;
+  }
+
+  .info-head {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
   }
