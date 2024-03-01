@@ -408,3 +408,29 @@ section {
     margin-top: 10%;
     display: flex;
   }
+
+  .contact-form {
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    margin-right:40%;
+    margin-left: 40%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.contact-form input {
+    margin: 5px;
+    flex: 0 0 20px;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    width: 100px;
+    line-height: 26px;
+    float: left;
+}
